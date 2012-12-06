@@ -1,0 +1,4 @@
+<%= form_for @pic, :html => {:multipart => true} do |f| %>
+  <%= f.file_field :cover_image %>
+	<%= f.submit "Create Pic", :class => "form-submit-button" %>
+<% end %>

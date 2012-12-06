@@ -1,0 +1,4 @@
+<% @pic.each do |pic| %>
+	<%= image_tag pic.cover_image.thumb('300x200').url %>
+	<%= image_tag pic.cover_image.process(:greyscale).jpg.url %>
+<% end %>
